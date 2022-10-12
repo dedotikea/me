@@ -27,7 +27,7 @@ const BackgroundChanges = () => {
             setBg((bg) => {
                 return bg === 15 ? 0 : bg + 1;
             })
-        }, 187.5)
+        }, 200)
         return () => clearInterval(interval)
     }, [])
     return (

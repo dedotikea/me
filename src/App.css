@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #000000bd;
 }
 
 @font-face {
@@ -22,6 +21,7 @@
 }
 
 .Background {
+  background-size: cover;
   position: fixed;
   top: -50%;
   left: -50%;
@@ -30,6 +30,7 @@
 }
 
 .Background img {
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -48,4 +49,12 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.SocialLinks{
+  z-index: 4;
+
+  position: fixed;
+
+  color: white;
 }
