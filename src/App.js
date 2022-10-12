@@ -21,3 +21,10 @@ function App() {
 }
 
 export default App;
+
+//what to do:
+//nambahin tip (click to copy) pas cursor ngehover discord
+//nambahin tip (copied) pas cursor ngeclick discord
+//animasi berhenti pas cursor ngehover ke salah satu link
+//ngebenerin tampilan di mobile
+//kapan harus pake synchronous/asynchronous(?)
