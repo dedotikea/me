@@ -17,7 +17,7 @@
   transform: translate(-50%, -50%);
   font-family: Lato-Light;
   color: white;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .Background {
@@ -53,8 +53,17 @@
 
 .SocialLinks{
   z-index: 4;
-
   position: fixed;
+}
 
-  color: white;
+.SocialLinks img{
+  filter: invert();
+  width: 70%;
+  height: 70%;
+}
+
+.SocialLinks input{
+  filter: invert();
+  width: 70%;
+  height: 70%;
 }
