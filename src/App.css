@@ -1,10 +1,13 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Lato';
 }
 
-@font-face {
-  font-family: Lato-Light;
-  src: url(./fonts/Lato-Light.ttf);
+.App {
+  text-align: center;
 }
 
 .Header {
@@ -21,24 +24,13 @@
 }
 
 .Background {
-  background-size: cover;
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  margin: 0 auto;
 }
 
 .Background img {
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   margin: auto;
-  min-width: 50%;
-  min-height: 50%;
+  height: auto;
+  max-width: 100%;
 }
 
 .Box {
@@ -51,18 +43,18 @@
   left: 0px;
 }
 
-.SocialLinks{
+.SocialLinks {
   z-index: 4;
   position: fixed;
 }
 
-.SocialLinks img{
+.SocialLinks img {
   filter: invert();
   width: 70%;
   height: 70%;
 }
 
-.SocialLinks input{
+.SocialLinks input {
   filter: invert();
   width: 70%;
   height: 70%;
