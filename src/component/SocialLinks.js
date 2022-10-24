@@ -1,12 +1,12 @@
 import React from "react";
-import discordIcon from "./images/socials/discord.png"
-import githubIcon from "./images/socials/github.png"
-import gmailIcon from "./images/socials/gmail.png"
-import instagramIcon from "./images/socials/instagram.png"
-import osuIcon from "./images/socials/osu.png"
-import twitchIcon from "./images/socials/twitch.png"
-import twitterIcon from "./images/socials/twitter.png"
-import youtubeIcon from "./images/socials/youtube.png"
+import discordIcon from "../assets/images/socials/discord.png"
+import githubIcon from "../assets/images/socials/github.png"
+import gmailIcon from "../assets/images/socials/gmail.png"
+import instagramIcon from "../assets/images/socials/instagram.png"
+import osuIcon from "../assets/images/socials/osu.png"
+import twitchIcon from "../assets/images/socials/twitch.png"
+import twitterIcon from "../assets/images/socials/twitter.png"
+import youtubeIcon from "../assets/images/socials/youtube.png"
 
 
 //bikin title dengan props value

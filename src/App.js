@@ -1,22 +1,9 @@
 import './App.css';
-import BackgroundChanges from './BackgroundChanges';
-import HeaderText from './HeaderText';
-import SocialLinks from './SocialLinks';
+import Routing from './Routing';
 
 function App() {
   return (
-    <div className="App">
-      <div className='SocialLinks'>
-        <SocialLinks></SocialLinks>
-      </div>
-      <div className="Box"></div>
-      <div className="Background">
-        <BackgroundChanges></BackgroundChanges>
-      </div>
-      <div className="Header">
-        <HeaderText></HeaderText>
-      </div>
-    </div>
+    <Routing></Routing>
   );
 }
 
@@ -30,6 +17,7 @@ export default App;
 //4. ngebenerin tampilan di mobile
 //5. kapan harus pake synchronous/asynchronous(?)
 //6. bikin bgchanges lebih singkat/simpel(?)
-//7. routing ke page lain(?)
-//8. bikin footer buat nambahin source art (yoneyama)
+//Done 7. routing ke page lain(?)
+//Done 8. bikin footer buat nambahin source art (yoneyama)
 //9. ganti dari img ke background
+//10. nambahin play-pause gambar
