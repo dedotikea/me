@@ -43,9 +43,10 @@
   color: white;
   position: fixed;
   bottom: 0;
+  right: 0;
 }
 
-.Footer a{
+.Footer a {
   text-decoration: none;
   color: white
 }
@@ -64,8 +65,10 @@
   z-index: 3;
   position: fixed;
   left: 0;
-  font-family: Lato-Light;
-  color: white;
+}
+
+.textNav:hover {
+  font-weight: 900;
 }
 
 .SocialLinks {
@@ -84,4 +87,19 @@
   filter: invert();
   width: 70%;
   height: 70%;
+}
+
+.SocialLinks img:hover {
+  filter: invert();
+  width: 73.5%;
+  height: 73.5%;
+}
+
+.SocialLinks input:hover {
+  width: 73.5%;
+  height: 73.5%;
+}
+
+.textFooter:hover {
+  font-weight: 900;
 }
