@@ -23,22 +23,14 @@
   font-size: 4vw;
 }
 
-.Background {
-  margin: 0 auto;
-}
-
 .Background img {
-  margin: auto;
-  height: auto;
-  max-width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 .Footer {
+  font-size: 1vw;
   z-index: 4;
   color: white;
   position: fixed;
@@ -53,7 +45,7 @@
 
 .Box {
   z-index: 2;
-  background: hsla(0, 0%, 0%, 0.5);
+  background: hsla(0, 0%, 0%, 0.6);
   position: absolute;
   top: 0px;
   right: 0px;
@@ -67,39 +59,101 @@
   left: 0;
 }
 
-.textNav:hover {
-  font-weight: 900;
+.text-nav-container p {
+  font-size: 2vw;
+  margin: 0;
 }
 
-.SocialLinks {
+.text-nav-container:hover p {
+  color: transparent;
+}
+
+.text-nav-container p:hover{
+  color: white;
+}
+
+.SocialLinks-container {
   z-index: 4;
   position: fixed;
   right: 0;
 }
 
-.SocialLinks img {
-  filter: invert();
-  width: 70%;
-  height: 70%;
+.SocialLinks-container:hover img {
+  filter: none;
 }
 
-.SocialLinks input {
-  filter: invert();
-  width: 70%;
-  height: 70%;
+.SocialLinks-container:hover input {
+  filter: none;
 }
 
-.SocialLinks img:hover {
+.SocialLinks-container img {
   filter: invert();
-  width: 73.5%;
-  height: 73.5%;
+  width: 2vw;
+  height: 2vw;
 }
 
-.SocialLinks input:hover {
-  width: 73.5%;
-  height: 73.5%;
+.SocialLinks-container input {
+  filter: invert();
+  width: 2vw;
+  height: 2vw;
+}
+
+.SocialLinks-container img:hover {
+  filter: invert();
+}
+
+.SocialLinks-container input:hover {
+  filter: invert();
 }
 
 .textFooter:hover {
-  font-weight: 900;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .Background img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .textNav p {
+    font-size: 3vw;
+  }
+
+  .SocialLinks-container img {
+    filter: invert();
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .SocialLinks-container input {
+    filter: invert();
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .Background img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .textNav p {
+    font-size: 5vw;
+  }
+
+  .SocialLinks-container img {
+    filter: invert();
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .SocialLinks-container input {
+    filter: invert();
+    width: 5vw;
+    height: 5vw;
+  }
 }

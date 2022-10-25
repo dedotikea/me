@@ -2,61 +2,58 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <>
+        <div className="text-nav-container">
             <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
-                    fontSize: "1.5em",
+                    // fontSize: "2vw",
                     display: "block",
-                    margin: "1rem 0",
+                    margin: "1rem 0 0",
                     color: isActive ? "white" : "grey",
                     fontWeight: isActive ? "bold" : "",
-                    
+
                 }
             }}
                 to={`/me`}>
-                me
+                <p>me</p>
             </NavLink>
             <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
-                    fontSize: "1.5em",
+                    // fontSize: "2vw",
                     display: "block",
-                    margin: "1rem 0",
                     color: isActive ? "white" : "grey",
                     fontWeight: isActive ? "bold" : "",
                 }
             }}
                 to={`/about`}>
-                about
+                <p>about</p>
             </NavLink>
             <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
-                    fontSize: "1.5em",
+                    // fontSize: "2vw",
                     display: "block",
-                    margin: "1rem 0",
                     color: isActive ? "white" : "grey",
                     fontWeight: isActive ? "bold" : "",
                 }
             }}
                 to={`/maplist`}>
-                maplist
+                <p>maplist</p>
             </NavLink>
             <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
-                    fontSize: "1.5em",
+                    // fontSize: "2vw",
                     display: "block",
-                    margin: "1rem 0",
                     color: isActive ? "white" : "grey",
                     fontWeight: isActive ? "bold" : "",
                 }
             }}
                 to={`/makansiang`}>
-                makan Siang
+                <p>makan Siang</p>
             </NavLink>
-        </>
+        </div>
 
     )
 }

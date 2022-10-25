@@ -25,7 +25,7 @@ const SocialLinks = () => {
         
     }
     return (
-        <div className="SocialLinks">
+        <div className="SocialLinks-container">
             <div>
                 <input type="image" src={discord} alt="discordIcon.png" onClick={copy}></input>
             </div>
