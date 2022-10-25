@@ -1,7 +1,8 @@
 const Footer = () => {
+    const blank = "_blank";
     return (
         <>
-            art by: <a href="https://www.pixiv.net/en/users/1554775">米山舞</a>
+            art by: <a href="https://www.pixiv.net/en/users/1554775" target={blank}>米山舞</a>
         </>
     )
 }

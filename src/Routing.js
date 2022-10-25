@@ -11,7 +11,7 @@ const Routing = () => {
                 <Route path='/me' element={<Home></Home>}></Route>
                 <Route path='/about' element={<About></About>}></Route>
                 <Route path='/maplist' element={<MapList></MapList>}></Route>
-                <Route path='/*' element={<ErrorPage></ErrorPage>}></Route>
+                <Route path='/*' element={<ErrorPage></ErrorPage>} errorElement={<ErrorPage></ErrorPage>}></Route>
             </Routes>
         </BrowserRouter>
     )
