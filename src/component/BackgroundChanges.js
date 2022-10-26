@@ -15,6 +15,8 @@ import bckgrd12 from "../assets/images/index13.jpg"
 import bckgrd13 from "../assets/images/index14.jpg"
 import bckgrd14 from "../assets/images/index15.jpg"
 import bckgrd15 from "../assets/images/index16.jpg"
+import playButton from "../assets/button/play.png"
+import pauseButton from "../assets/button/pause.png"
 
 const BackgroundChanges = () => {
     const backgrounds = [
@@ -22,19 +24,39 @@ const BackgroundChanges = () => {
         bckgrd9, bckgrd10, bckgrd11, bckgrd12, bckgrd13, bckgrd14, bckgrd15,
     ]
     const [bg, setBg] = React.useState(0);
+    const [toggle, setToggle] = React.useState(1);
+    const button = [playButton, pauseButton];
+
     React.useEffect(() => {
-        const interval = setInterval(() => {
+        if (toggle === 0) {
             setBg((bg) => {
-                return bg === 15 ? 0 : bg + 1;
+                return bg;
             })
-        }, 150)
-        return () => clearInterval(interval)
-    }, [])
+        } else if (toggle === 1) {
+            const interval = setInterval(() => {
+                setBg((bg) => {
+                    return bg === 15 ? 0 : bg + 1;
+                })
+            }, 150)
+            return () => clearInterval(interval)
+        }
+    }, [toggle])
+
+    const handleToggle = () => {
+        setToggle((toggle) => {
+            return toggle === 0 ? 1 : 0;
+        })
+    }
+
     return (
-        <div className="background-changes">
-            <img src={backgrounds[bg]} alt="index{bg}.jpg"></img>
-        </div>
-        
+        <>
+            <div className="background-changes">
+                <img src={backgrounds[bg]} alt="index{bg}.jpg"></img>
+            </div>
+            <div className="play-button-container">
+                <input type="image" src={button[toggle]} alt="test.png" onClick={handleToggle}></input>
+            </div>
+        </>
     )
 }
 

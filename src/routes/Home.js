@@ -2,7 +2,6 @@ import BackgroundChanges from "../component/BackgroundChanges"
 import Footer from "../component/Footer";
 import HeaderText from "../component/HeaderText";
 import Navbar from "../component/Navbar";
-import PlayButton from "../component/PlayButton";
 import SocialLinks from "../component/SocialLinks";
 
 
@@ -21,9 +20,6 @@ const Home = () => {
             </div>
             <div className="Background">
                 <BackgroundChanges></BackgroundChanges>
-            </div>
-            <div className="PlayButton">
-                <PlayButton></PlayButton>
             </div>
             <div className="Footer">
                 <Footer></Footer>

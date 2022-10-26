@@ -30,7 +30,7 @@
 }
 
 .Footer {
-  font-size: 1vw;
+  font-size: 1.5vw;
   z-index: 4;
   color: white;
   position: fixed;
@@ -146,6 +146,16 @@
     width: 3vw;
     height: 3vw;
   }
+
+  .play-button-container input {
+    filter: invert();
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .Footer {
+    font-size: 3vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -170,5 +180,15 @@
     filter: invert();
     width: 5vw;
     height: 5vw;
+  }
+
+  .play-button-container input {
+    filter: invert();
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .Footer {
+    font-size: 5vw;
   }
 }

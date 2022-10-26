@@ -20,4 +20,4 @@ export default App;
 //Done 7. routing ke page lain(?)
 //Done 8. bikin footer buat nambahin source art (yoneyama)
 //9. ganti dari img ke background
-//10. nambahin play-pause gambar
+//Done 10. nambahin play-pause gambar
