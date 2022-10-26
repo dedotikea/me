@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import PlayPauseSlice from "../reducers/PlayPauseSlice";
+import PlayButtonSlice from "../reducers/PlayButtonSlice";
 
 const Store = configureStore({
-    reducer: PlayPauseSlice,
+    reducer: PlayButtonSlice,
 })
 
 export default Store;

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const PlayPauseSlice = createSlice({
-    name: 'PlayPause',
+const PlayButtonSlice = createSlice({
+    name: 'PlayButton',
     initialState: 1,
     reducers: {
         play(state, action){
@@ -13,4 +13,4 @@ const PlayPauseSlice = createSlice({
     }
 })
 
-export default PlayPauseSlice.reducer
+export default PlayButtonSlice.reducer

@@ -41,7 +41,7 @@ const Navbar = () => {
                 to={`/maplist`}>
                 <p>maplist</p>
             </NavLink>
-            <NavLink className="textNav" style={({ isActive }) => {
+            {/* <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
                     // fontSize: "2vw",
@@ -52,7 +52,7 @@ const Navbar = () => {
             }}
                 to={`/makansiang`}>
                 <p>makan Siang</p>
-            </NavLink>
+            </NavLink> */}
         </div>
 
     )

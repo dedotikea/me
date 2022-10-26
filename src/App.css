@@ -59,6 +59,19 @@
   left: 0;
 }
 
+.play-button-container input {
+  filter: invert();
+  width: 2vw;
+  height: 2vw;
+}
+
+.play-button-container {
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
 .text-nav-container p {
   font-size: 2vw;
   margin: 0;
@@ -68,7 +81,7 @@
   color: transparent;
 }
 
-.text-nav-container p:hover{
+.text-nav-container p:hover {
   color: white;
 }
 
@@ -114,7 +127,8 @@
 
   .Background img {
     width: 100%;
-    padding: 0;
+    object-position: 100% 0;
+    object-fit: cover;
   }
 
   .textNav p {
@@ -138,7 +152,8 @@
 
   .Background img {
     width: 100%;
-    padding: 0;
+    object-position: 100% 0;
+    object-fit: cover;
   }
 
   .textNav p {
