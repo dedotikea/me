@@ -1,4 +1,5 @@
 import Navbar from "../component/Navbar";
+// import Tippy from "@tippyjs/react";
 
 export default function About() {
     return (
@@ -10,6 +11,9 @@ export default function About() {
             <div style={{ background: "gold" }}>
                 <h1>dari about</h1>
             </div>
+            {/* <Tippy content="Hello">
+                <button>My button</button>
+            </Tippy> */}
         </div>
     )
 }

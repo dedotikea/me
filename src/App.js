@@ -11,8 +11,8 @@ export default App;
 
 //what to do:
 
-//1. nambahin tip (click to copy) pas cursor ngehover discord
-//2. nambahin tip (copied) pas cursor ngeclick discord
+//done 1. nambahin tip (click to copy) pas cursor ngehover discord
+//done 2. nambahin tip (copied) pas cursor ngeclick discord
 //3. animasi berhenti pas cursor ngehover ke salah satu link
 //Done 4. ngebenerin tampilan di mobile
 //5. kapan harus pake synchronous/asynchronous(?)

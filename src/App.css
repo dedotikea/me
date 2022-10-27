@@ -65,6 +65,9 @@
   left: 0;
 }
 
+.tooltip {
+  color: white;
+}
 
 .play-button-container {
   z-index: 4;

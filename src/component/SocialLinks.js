@@ -1,4 +1,5 @@
 import React from "react";
+import Tippy from "@tippyjs/react";
 import discordIcon from "../assets/images/socials/discord.png"
 import githubIcon from "../assets/images/socials/github.png"
 import gmailIcon from "../assets/images/socials/gmail.png"
@@ -20,14 +21,23 @@ const SocialLinks = () => {
     const twitter = twitterIcon;
     const youtube = youtubeIcon;
     const blank = "_blank";
+
+
     const copy = () => {
         navigator.clipboard.writeText("dedotikea#8526")
-        
     }
     return (
         <div className="SocialLinks-container">
             <div>
-                <input type="image" src={discord} alt="discordIcon.png" onClick={copy}></input>
+                <Tippy content='Click to copy' placement="left" className="tooltip" duration={0}>
+                    <Tippy content="Copied" placement="left" className="tooltip" trigger="click" onShow={(instance) => {
+                        setTimeout(() => {
+                            instance.hide();
+                        }, 650);
+                    }}>
+                        <input type="image" src={discord} alt="discordIcon.png" onClick={copy}></input>
+                    </Tippy>
+                </Tippy>
             </div>
             <div>
                 <a href="https://github.com/dedotikea" target={blank}>
