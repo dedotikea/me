@@ -6,9 +6,7 @@ const Navbar = () => {
             <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
-                    // fontSize: "2vw",
                     display: "block",
-                    margin: "1rem 0 0",
                     color: isActive ? "white" : "grey",
                     fontWeight: isActive ? "bold" : "",
 
@@ -20,7 +18,6 @@ const Navbar = () => {
             <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
-                    // fontSize: "2vw",
                     display: "block",
                     color: isActive ? "white" : "grey",
                     fontWeight: isActive ? "bold" : "",
@@ -32,7 +29,6 @@ const Navbar = () => {
             <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
-                    // fontSize: "2vw",
                     display: "block",
                     color: isActive ? "white" : "grey",
                     fontWeight: isActive ? "bold" : "",
@@ -44,7 +40,6 @@ const Navbar = () => {
             {/* <NavLink className="textNav" style={({ isActive }) => {
                 return {
                     textDecoration: "none",
-                    // fontSize: "2vw",
                     display: "block",
                     color: isActive ? "white" : "grey",
                     fontWeight: isActive ? "bold" : "",
