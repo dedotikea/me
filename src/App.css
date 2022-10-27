@@ -137,12 +137,6 @@
 
 @media screen and (max-width: 1000px) {
 
-  .Background img {
-    width: 100%;
-    object-position: 100% 0;
-    object-fit: cover;
-  }
-
   .textNav p {
     font-size: 3vw;
   }
@@ -164,6 +158,11 @@
     width: 3vw;
     height: 3vw;
   }
+  
+  .play-button-container input:hover {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
 
   .Footer {
     font-size: 3vw;
@@ -171,12 +170,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
-  .Background img {
-    width: 100%;
-    object-position: 100% 0;
-    object-fit: cover;
-  }
 
   .textNav p {
     font-size: 5vw;
@@ -198,6 +191,11 @@
     filter: invert();
     width: 5vw;
     height: 5vw;
+  }
+  
+  .play-button-container input:hover {
+    width: 5.5vw;
+    height: 5.5vw;
   }
 
   .Footer {
