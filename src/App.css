@@ -23,10 +23,16 @@
   font-size: 4vw;
 }
 
-.Background img {
-  width: 100%;
-  object-position: center;
-  object-fit: cover;
+.background-changes {
+  z-index: 1;
+  position: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .Footer {
@@ -59,17 +65,23 @@
   left: 0;
 }
 
-.play-button-container input {
-  filter: invert();
-  width: 2vw;
-  height: 2vw;
-}
 
 .play-button-container {
   z-index: 4;
   position: fixed;
   left: 0;
   bottom: 0;
+}
+
+.play-button-container input {
+  filter: invert();
+  width: 2vw;
+  height: 2vw;
+}
+
+.play-button-container input:hover {
+  width: 2.2vw;
+  height: 2.2vw;
 }
 
 .text-nav-container p {
