@@ -8,8 +8,8 @@ export default function About() {
                 <Navbar></Navbar>
             </div>
             {/* temp color */}
-            <div style={{ background: "gold" }}>
-                <h1>dari about</h1>
+            <div style={{ background: "gold", textAlign: "center" }}>
+                <h1>WIP</h1>
             </div>
             {/* <Tippy content="Hello">
                 <button>My button</button>

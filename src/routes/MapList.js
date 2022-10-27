@@ -8,15 +8,8 @@ export default function MapList() {
                 <Navbar></Navbar>
             </div>
             {/* temp color */}
-            <div style={{ background: "gold" }}>
-                <h1>dari maplist</h1>
-            </div>
-            <div style={{color: "white"}}>
-                aaaaa <br></br>
-                aaaaaa<br></br>
-                aaaaa<br></br>
-                aaaaa<br></br>
-                aaaaa<br></br>
+            <div style={{ background: "gold", textAlign: "center" }}>
+                <h1>WIP</h1>
             </div>
         </div>
     )
