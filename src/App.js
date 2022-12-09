@@ -21,3 +21,4 @@ export default App;
 //Done 8. bikin footer buat nambahin source art (yoneyama)
 //Done 9. ganti dari img ke background
 //Done 10. nambahin play-pause gambar
+//11. marginnya terlalu rapet

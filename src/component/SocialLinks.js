@@ -27,52 +27,54 @@ const SocialLinks = () => {
         navigator.clipboard.writeText("dedotikea#8526")
     }
     return (
-        <div className="SocialLinks-container">
-            <div>
-                <Tippy content='Click to copy' placement="left" className="tooltip" duration={0}>
-                    <Tippy content="Copied" placement="left" className="tooltip" trigger="click" onShow={(instance) => {
-                        setTimeout(() => {
-                            instance.hide();
-                        }, 650);
-                    }}>
-                        <input type="image" src={discord} alt="discordIcon.png" onClick={copy}></input>
+        <div className="SocialLinks">
+            <div className="SocialLinks-container">
+                <div>
+                    <Tippy content='Click to copy' placement="left" className="tooltip" duration={0}>
+                        <Tippy content="Copied" placement="left" className="tooltip" trigger="click" onShow={(instance) => {
+                            setTimeout(() => {
+                                instance.hide();
+                            }, 650);
+                        }}>
+                            <input type="image" src={discord} alt="discordIcon.png" onClick={copy}></input>
+                        </Tippy>
                     </Tippy>
-                </Tippy>
-            </div>
-            <div>
-                <a href="https://github.com/dedotikea" target={blank}>
-                    <img src={github} alt="githubIcon.png"></img>
-                </a>
-            </div>
-            <div>
-                <a href="mailto:rayhangustiar@gmail.com" target={blank}>
-                    <img src={gmail} alt="gmailIcon.png"></img>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/dedotikea/" target={blank}>
-                    <img src={instagram} alt="instagramIcon.png"></img>
-                </a>
-            </div>
-            <div>
-                <a href="https://osu.ppy.sh/users/8805157" target={blank}>
-                    <img src={osu} alt="osuIcon.png"></img>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.twitch.tv/dedotikea" target={blank}>
-                    <img src={twitch} alt="twitchIcon.png"></img>
-                </a>
-            </div>
-            <div>
-                <a href="https://twitter.com/dedotikea_ctb" target={blank}>
-                    <img src={twitter} alt="twitterIcon.png"></img>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/channel/UCba2VpPlvlnYIHR3Nr6Va4A" target={blank}>
-                    <img src={youtube} alt="youtubeIcon.png"></img>
-                </a>
+                </div>
+                <div>
+                    <a href="https://github.com/dedotikea" target={blank}>
+                        <img src={github} alt="githubIcon.png"></img>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:rayhangustiar@gmail.com" target={blank}>
+                        <img src={gmail} alt="gmailIcon.png"></img>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/dedotikea/" target={blank}>
+                        <img src={instagram} alt="instagramIcon.png"></img>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://osu.ppy.sh/users/8805157" target={blank}>
+                        <img src={osu} alt="osuIcon.png"></img>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.twitch.tv/dedotikea" target={blank}>
+                        <img src={twitch} alt="twitchIcon.png"></img>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/dedotikea_ctb" target={blank}>
+                        <img src={twitter} alt="twitterIcon.png"></img>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/channel/UCba2VpPlvlnYIHR3Nr6Va4A" target={blank}>
+                        <img src={youtube} alt="youtubeIcon.png"></img>
+                    </a>
+                </div>
             </div>
         </div>
     )

@@ -2,48 +2,49 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="text-nav-container">
-            <NavLink
-                className="textNav"
-                style={({ isActive }) => {
-                    return {
-                        textDecoration: "none",
-                        display: "block",
-                        color: isActive ? "white" : "grey",
-                        fontWeight: isActive ? "bold" : "",
+        <div className="Navbar">
+            <div className="text-nav-container">
+                <NavLink
+                    className="textNav"
+                    style={({ isActive }) => {
+                        return {
+                            textDecoration: "none",
+                            display: "block",
+                            color: isActive ? "white" : "grey",
+                            fontWeight: isActive ? "bold" : "",
 
-                    }
-                }}
-                to={`/me`}>
-                <p>me</p>
-            </NavLink>
-            <NavLink
-                className="textNav"
-                style={({ isActive }) => {
-                    return {
-                        textDecoration: "none",
-                        display: "block",
-                        color: isActive ? "white" : "grey",
-                        fontWeight: isActive ? "bold" : "",
-                    }
-                }}
-                to={`/about`}>
-                <p>about</p>
-            </NavLink>
-            <NavLink
-                className="textNav"
-                style={({ isActive }) => {
-                    return {
-                        textDecoration: "none",
-                        display: "block",
-                        color: isActive ? "white" : "grey",
-                        fontWeight: isActive ? "bold" : "",
-                    }
-                }}
-                to={`/maplist`}>
-                <p>maplist</p>
-            </NavLink>
-            {/* <NavLink 
+                        }
+                    }}
+                    to={`/me`}>
+                    <p>me</p>
+                </NavLink>
+                <NavLink
+                    className="textNav"
+                    style={({ isActive }) => {
+                        return {
+                            textDecoration: "none",
+                            display: "block",
+                            color: isActive ? "white" : "grey",
+                            fontWeight: isActive ? "bold" : "",
+                        }
+                    }}
+                    to={`/about`}>
+                    <p>nyoba map</p>
+                </NavLink>
+                <NavLink
+                    className="textNav"
+                    style={({ isActive }) => {
+                        return {
+                            textDecoration: "none",
+                            display: "block",
+                            color: isActive ? "white" : "grey",
+                            fontWeight: isActive ? "bold" : "",
+                        }
+                    }}
+                    to={`/maplist`}>
+                    <p>nyoba api</p>
+                </NavLink>
+                {/* <NavLink 
                 className="textNav" 
                 style={({ isActive }) => {
                 return {
@@ -56,6 +57,7 @@ const Navbar = () => {
                 to={`/makansiang`}>
                 <p>makan Siang</p>
             </NavLink> */}
+            </div>
         </div>
 
     )

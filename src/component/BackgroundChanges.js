@@ -49,14 +49,14 @@ const BackgroundChanges = () => {
     }
 
     return (
-        <>
-            <div className="background-changes" style={{backgroundImage: `url(${backgrounds[bg]})`}}>
+        <div className="Background">
+            <div className="background-changes" style={{ backgroundImage: `url(${backgrounds[bg]})` }}>
                 {/* <img src={backgrounds[bg]} alt="index{bg}.jpg"></img> */}
             </div>
             <div className="play-button-container">
                 <input type="image" src={button[toggle]} alt="test.png" onClick={handleToggle}></input>
             </div>
-        </>
+        </div>
     )
 }
 
