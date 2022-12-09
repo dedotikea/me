@@ -44,19 +44,19 @@ const Navbar = () => {
                     to={`/maplist`}>
                     <p>nyoba api</p>
                 </NavLink>
-                {/* <NavLink 
-                className="textNav" 
-                style={({ isActive }) => {
-                return {
-                    textDecoration: "none",
-                    display: "block",
-                    color: isActive ? "white" : "grey",
-                    fontWeight: isActive ? "bold" : "",
-                }
-            }}
-                to={`/makansiang`}>
-                <p>makan Siang</p>
-            </NavLink> */}
+                <NavLink
+                    className="textNav"
+                    style={({ isActive }) => {
+                        return {
+                            textDecoration: "none",
+                            display: "block",
+                            color: isActive ? "white" : "grey",
+                            fontWeight: isActive ? "bold" : "",
+                        }
+                    }}
+                    to={`/nyobavictorygraph`}>
+                    <p>test graph mobile</p>
+                </NavLink>
             </div>
         </div>
 
