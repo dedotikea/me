@@ -24,7 +24,7 @@ const Routing = () => {
                 <Route path='/maplist/rainbowsky' element={<RainbowSky></RainbowSky>}></Route>
                 <Route path='/makansiang' element={<MakanSiang></MakanSiang>}></Route>
                 <Route path='/layoutkasar' element={<LayoutKasar></LayoutKasar>}></Route>
-                <Route path='/nyobavictorygraph' element={<NyobaGraph></NyobaGraph>}></Route>
+                <Route path='/nyobagraph' element={<NyobaGraph></NyobaGraph>}></Route>
                 <Route path='/*' element={<ErrorPage></ErrorPage>} errorElement={<ErrorPage></ErrorPage>}></Route>
             </Routes>
         </BrowserRouter>

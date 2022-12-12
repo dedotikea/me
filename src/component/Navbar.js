@@ -54,7 +54,7 @@ const Navbar = () => {
                             fontWeight: isActive ? "bold" : "",
                         }
                     }}
-                    to={`/nyobavictorygraph`}>
+                    to={`/nyobagraph`}>
                     <p>test graph mobile</p>
                 </NavLink>
             </div>
