@@ -1,5 +1,6 @@
 import React from 'react'
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryZoomContainer } from 'victory'
+import Navbar from '../component/Navbar'
 
 const NyobaGraph = () => {
     const data = [
@@ -12,9 +13,7 @@ const NyobaGraph = () => {
 
     return (
         <>
-            <div>
-                test 2
-            </div>
+            <Navbar></Navbar>
             <div>
                 <VictoryChart
                     domainPadding={20}
@@ -48,3 +47,9 @@ const NyobaGraph = () => {
 }
 
 export default NyobaGraph
+
+//yang dibutuhin:
+//@visx/zoom
+//@visx/tooltip
+//@visx/axis
+//@visx/curve
