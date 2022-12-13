@@ -19,7 +19,7 @@ const NyobaGraph = () => {
             <div>
                 <Navbar></Navbar>
             </div>
-            <div>
+            {/* <div>
                 <VictoryChart
                     domainPadding={20}
                     height={1000}
@@ -46,7 +46,7 @@ const NyobaGraph = () => {
                         y="earnings"
                     />
                 </VictoryChart>
-            </div>
+            </div> */}
             <div style={{
                 height: "200px",
                 backgroundColor: "black",
@@ -58,8 +58,8 @@ const NyobaGraph = () => {
                 backgroundColor: "#242730",
                 position: "relative",
             }}>
-                <NyobaChartVisx></NyobaChartVisx>
-                <NyobaRecharts></NyobaRecharts>
+                {/* <NyobaChartVisx></NyobaChartVisx> */}
+                {/* <NyobaRecharts></NyobaRecharts> */}
                 <NyobaDevexChart></NyobaDevexChart>
             </div>
         </>
