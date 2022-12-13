@@ -1,15 +1,17 @@
 import React from 'react'
-// import { VictoryAxis, VictoryBar, VictoryChart, VictoryZoomContainer } from 'victory'
+import { VictoryAxis, VictoryBar, VictoryChart, VictoryZoomContainer } from 'victory'
 import Navbar from '../component/Navbar'
 import NyobaChartVisx from '../component/NyobaChartVisx'
+import NyobaDevexChart from '../component/NyobaDevexChart'
+import NyobaRecharts from '../component/NyobaRecharts'
 
 const NyobaGraph = () => {
-    // const data = [
-    //     { quarter: 1, earnings: 13000 },
-    //     { quarter: 2, earnings: 16500 },
-    //     { quarter: 3, earnings: 14250 },
-    //     { quarter: 4, earnings: 19000 }
-    // ]
+    const data = [
+        { quarter: 1, earnings: 13000 },
+        { quarter: 2, earnings: 16500 },
+        { quarter: 3, earnings: 14250 },
+        { quarter: 4, earnings: 19000 }
+    ]
 
 
     return (
@@ -17,7 +19,7 @@ const NyobaGraph = () => {
             <div>
                 <Navbar></Navbar>
             </div>
-            {/* <div>
+            <div>
                 <VictoryChart
                     domainPadding={20}
                     height={1000}
@@ -44,7 +46,7 @@ const NyobaGraph = () => {
                         y="earnings"
                     />
                 </VictoryChart>
-            </div> */}
+            </div>
             <div style={{
                 height: "200px",
                 backgroundColor: "black",
@@ -57,6 +59,8 @@ const NyobaGraph = () => {
                 position: "relative",
             }}>
                 <NyobaChartVisx></NyobaChartVisx>
+                <NyobaRecharts></NyobaRecharts>
+                <NyobaDevexChart></NyobaDevexChart>
             </div>
         </>
     )

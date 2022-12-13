@@ -99,8 +99,6 @@ function LineChart({ data, width, height }) {
             <svg width={width} height={height} >
                 <rect x={0} y={0} width={width} height={height} fill={'#718096'} rx={14} />
                 <Group left={margin.left} top={margin.top}>
-
-
                     <AxisLeft
                         tickTextFill={'#EDF2F7'}
                         stroke={'#EDF2F7'}
