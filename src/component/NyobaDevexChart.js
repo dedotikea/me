@@ -5,6 +5,8 @@ import Chart, {
   ZoomAndPan,
   Legend,
   ScrollBar,
+  ValueAxis,
+  CommonAxisSettings,
 } from 'devextreme-react/chart';
 import { zoomingData } from './data.js';
 
@@ -15,14 +17,33 @@ class NyobaDevexChart extends React.Component {
     return (
       <Chart
         id="chart"
-        palette="Harmony Light"
+        // palette="Harmony Light"
         dataSource={zoomingData}>
-        <Series argumentField="arg" valueField="y1" />
-        <Series argumentField="arg" valueField="y2" />
-        <ArgumentAxis defaultVisualRange={visualRange} />
-        <ScrollBar visible={true} />
-        <ZoomAndPan argumentAxis="both" />
+        <Series
+          argumentField="arg"
+          valueField="y1"
+          type="spline"
+          color="#456972"
+        />
+        {/* <Series argumentField="arg" valueField="y2" /> */}
+        <ArgumentAxis
+          // defaultVisualRange={visualRange}
+          title="test argument axis"
+        />
+        <ValueAxis
+          title="test value axis"
+        />
+        <ScrollBar visible={false} />
+        <ZoomAndPan
+          argumentAxis="both"
+          // valueAxis="both"
+          allowTouchGestures={true}
+        />
         <Legend visible={false} />
+        <CommonAxisSettings
+          color="grey"
+        >
+        </CommonAxisSettings>
       </Chart>
     );
   }
